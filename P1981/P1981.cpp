@@ -10,9 +10,9 @@ stack<int> number;
 void Compute() {
     int left, right;
     
-    left = number.top();
-    number.pop();
     right = number.top();
+    number.pop();
+    left = number.top();
     number.pop();
 
     char op = ops.top();
